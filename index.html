@@ -391,7 +391,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
           <svg width="8" height="8" class="close-svg">
@@ -400,30 +400,48 @@
         </button>
         <p class="modal-main-text">Leave your contacts and we will call you back</p>
         <form>
-          <label>
+          <label class="modal-label">
             Name
-            <input type="text"
-            name="modal-input"
-            class="modal-input">
+            <div class="modal-wrap">
+              <input type="text"
+              name="modal-input"
+              class="modal-input">
+              <svg width="18" height="24" class="modal-icons">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
           </label>
-          <label>
+          <label class="modal-label">
             Phone
-            <input type="tel"
-            name="modal-input"
-            class="modal-input">
+            <div class="modal-wrap">
+              <input type="tel"
+              name="modal-input"
+              class="modal-input">
+              <svg width="18" height="24" class="modal-icons">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
           </label>
-          <label>
+          <label class="modal-label">
             Email
-            <input type="email"
-            name="modal-input"
-            class="modal-input">
+            <div class="modal-wrap">
+              <input type="email"
+              name="modal-input"
+              class="modal-input">
+              <svg width="18" height="24" class="modal-icons">
+                <use href="./images/icons.svg#icon-email1"></use>
+              </svg>
+            </div>
           </label>
-          <label>
+          <label class="modal-label">
             Comment
-            <input type="textarea"
+            <textarea rows="5"
             name="modal-input"
-            class="modal-input">
+            class="comment-input"
+            placeholder="Text input"></textarea>
           </label>
+          <p>I accept the terms and conditions of the Privacy Policy</p>
+          <button type="submit" class="modal-button">Send</button>
         </form>
       </div>
     </div>
