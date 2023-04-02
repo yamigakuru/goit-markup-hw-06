@@ -34,15 +34,15 @@ img{
 
 .visually-hidden{
     position: absolute;
-    white-space: nowrap;
     width: 1px;
     height: 1px;
-    overflow: hidden;
+    margin: -1px;
     border: 0;
     padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
     clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+    overflow: hidden;
 }
 
 
@@ -612,16 +612,19 @@ img{
     line-height: 24px;
     text-align: center;
     letter-spacing: 0.02em;
-    padding: 16px 0;
+    padding-bottom: 8px;
+    padding-top: 24px;
 }
 
-.moda-label{
+.modal-label-text{
+    display: inline-block;
+    margin-bottom: 4px;
+    padding-top: 8px;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.04em;
     color: #8E8F99;
-    padding-bottom: 4px;
 }
 
 .modal-input{
@@ -651,13 +654,14 @@ img{
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: transparent;
+    margin-top: 4px;
     transition-property: border, border-radius;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
 }
 
 .comment-input::placeholder{
-    padding-left: 16px;
+    padding: 8px 16px;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16;
@@ -682,7 +686,7 @@ img{
 }
 
 .modal-button{
-    background: #4D5AE5;
+    background-color: #4D5AE5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     font-weight: 500;
@@ -696,3 +700,39 @@ img{
     padding: 16px 32px;
     border: none;
 }
+
+.check-wrap{
+    padding-top: 16px;
+    padding-bottom: 24px;
+}
+
+.check-text {
+    display: flex;
+    gap: 8px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    color: #757575;
+}
+.check-link {
+    color: #4D5AE5;
+}
+
+.check-text .check-icon{
+    width: 16px;
+    height: 16px;
+    border: 1.25px solid #2E2F42;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+}
+
+.modal-check:checked + .check-text .check-icon{
+    border: none;
+    background-color: #404BBF;
+    fill: #F4F4FD;
+}
+

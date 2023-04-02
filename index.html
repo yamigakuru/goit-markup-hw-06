@@ -399,12 +399,12 @@
           </svg>
         </button>
         <p class="modal-main-text">Leave your contacts and we will call you back</p>
-        <form>
+        <form class="modal-form">
           <label class="modal-label">
-            Name
+            <span class="modal-label-text">Name</span>
             <div class="modal-wrap">
               <input type="text"
-              name="modal-input"
+              name="user-name"
               class="modal-input">
               <svg width="18" height="24" class="modal-icons">
                 <use href="./images/icons.svg#icon-person"></use>
@@ -412,10 +412,10 @@
             </div>
           </label>
           <label class="modal-label">
-            Phone
+            <span class="modal-label-text">Phone</span>
             <div class="modal-wrap">
               <input type="tel"
-              name="modal-input"
+              name="user-phone"
               class="modal-input">
               <svg width="18" height="24" class="modal-icons">
                 <use href="./images/icons.svg#icon-phone"></use>
@@ -423,10 +423,10 @@
             </div>
           </label>
           <label class="modal-label">
-            Email
+            <span class="modal-label-text">Email</span>
             <div class="modal-wrap">
               <input type="email"
-              name="modal-input"
+              name="user-email"
               class="modal-input">
               <svg width="18" height="24" class="modal-icons">
                 <use href="./images/icons.svg#icon-email1"></use>
@@ -434,13 +434,22 @@
             </div>
           </label>
           <label class="modal-label">
-            Comment
+            <span class="modal-label-text">Comment</span>
             <textarea rows="5"
-            name="modal-input"
+            name="user-comment"
             class="comment-input"
             placeholder="Text input"></textarea>
           </label>
-          <p>I accept the terms and conditions of the Privacy Policy</p>
+          <div class="check-wrap">
+            <input type="checkbox" id="modal-check" name="user-check" class="modal-check visually-hidden" required>
+            <label for="modal-check" class="check-text">
+            <span class="check-icon">
+              <svg width="10" height="8">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+            </span> I accept the terms and conditions of the <a class="check-link" href="">Privacy Policy</a>
+            </label>
+          </div>
           <button type="submit" class="modal-button">Send</button>
         </form>
       </div>
