@@ -409,6 +409,7 @@ img{
     letter-spacing: 0.02em;
     color: #E7E9FC;
     max-width: 264px;
+    height: 110px;
     margin-top: 16px;
 }
 
@@ -651,17 +652,17 @@ img{
 .comment-input{
     resize: none;
     width: 100%;
+    padding: 8px 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: transparent;
-    margin-top: 4px;
     transition-property: border, border-radius;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
 }
 
 .comment-input::placeholder{
-    padding: 8px 16px;
+    padding-left: 16px;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16;
@@ -686,19 +687,26 @@ img{
 }
 
 .modal-button{
+    margin-left: 98px;
     background-color: #4D5AE5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    min-width: 169px;
+    height: 56px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    display: flex;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
     color: #FFFFFF;
-    padding: 16px 32px;
     border: none;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+}
+
+.modal-button:is(:hover, :focus){
+    background-color: #404BBF;
 }
 
 .check-wrap{
@@ -715,6 +723,7 @@ img{
     letter-spacing: 0.04em;
     color: #757575;
 }
+
 .check-link {
     color: #4D5AE5;
 }
@@ -736,3 +745,73 @@ img{
     fill: #F4F4FD;
 }
 
+.subscribe-container{
+    margin-left: 80px;
+}
+
+.subscribe-wrap { 
+    display: flex;
+    gap: 24px;
+    margin-top: 16px;
+}
+.subscribe-label {
+}
+
+.subscribe-text{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.subscribe-input {
+    color: #FFFFFF;
+    padding-left: 16px;
+    outline: transparent;
+    min-width: 264px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: inherit;
+}
+
+.subscribe-input::placeholder{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-button {
+    background-color: #4D5AE5;
+    padding: 8px 24px;
+    min-width: 165px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    letter-spacing: 0.04em;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+}
+
+.subscribe-button:is(:hover, :focus){
+    background-color: #404BBF;
+}
+
+.subscribe-svg {
+    fill: #FFFFFF;
+}

@@ -389,6 +389,23 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe-container">
+          <label class="subscribe-label">
+            <span class="subscribe-text">Subscribe</span>
+            <div class="subscribe-wrap">
+              <input type="email"
+              placeholder="E-mail"
+              id="email-input"
+              name="subscribe-email"
+              class="subscribe-input">
+              <button type="submit" class="subscribe-button">Subscribe
+                <svg width="24px" height="24px" class="subscribe-svg">
+                  <use href="./images/icons.svg#icon-telegram"></use>
+                </svg>
+              </button>
+            </div>
+          </label>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -443,11 +460,11 @@
           <div class="check-wrap">
             <input type="checkbox" id="modal-check" name="user-check" class="modal-check visually-hidden" required>
             <label for="modal-check" class="check-text">
-            <span class="check-icon">
-              <svg width="10" height="8">
-                <use href="./images/icons.svg#icon-check"></use>
-              </svg>
-            </span> I accept the terms and conditions of the <a class="check-link" href="">Privacy Policy</a>
+              <span class="check-icon">
+                <svg width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span> I accept the terms and conditions of the <a class="check-link" href="">Privacy Policy</a>
             </label>
           </div>
           <button type="submit" class="modal-button">Send</button>
