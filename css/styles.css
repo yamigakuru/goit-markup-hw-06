@@ -409,7 +409,6 @@ img{
     letter-spacing: 0.02em;
     color: #E7E9FC;
     max-width: 264px;
-    height: 110px;
     margin-top: 16px;
 }
 
@@ -567,19 +566,20 @@ img{
 
 .modal{
     width: 408px;
-    min-height: 576px;
+    min-height: 584px;
     background-color: #FCFCFC;
     border-radius: 4px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    padding: 24px;
+    padding: 72px 24px;
 }
 
 .modal-close{
-    display: block;
-    margin-left: auto;
+    position: absolute;
+    top: 24px;
+    right: 24px;
     width: 24px;
     height: 24px;
     border-radius: 50%;
@@ -613,14 +613,16 @@ img{
     line-height: 24px;
     text-align: center;
     letter-spacing: 0.02em;
-    padding-bottom: 8px;
-    padding-top: 24px;
+    margin-bottom: 16px;
+}
+
+.modal-label{
+
 }
 
 .modal-label-text{
-    display: inline-block;
+    display: block;
     margin-bottom: 4px;
-    padding-top: 8px;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16;
@@ -650,6 +652,7 @@ img{
 }
 
 .comment-input{
+    display: block;
     resize: none;
     width: 100%;
     padding: 8px 16px;
@@ -678,7 +681,7 @@ img{
 .modal-icons{
     position: absolute;
     left: 16px;
-    top: 50%;
+    top: 65%;
     transform: translateY(-50%);
 }
 
@@ -686,8 +689,9 @@ img{
     position: relative;
 }
 
-.modal-button{
-    margin-left: 98px;
+.modal-button{ 
+    display: block;
+    margin: 0 auto;
     background-color: #4D5AE5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -710,8 +714,8 @@ img{
 }
 
 .check-wrap{
-    padding-top: 16px;
-    padding-bottom: 24px;
+    margin-top: 16px;
+    margin-bottom: 24px;
 }
 
 .check-text {
