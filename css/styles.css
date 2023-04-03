@@ -573,7 +573,7 @@ img{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    padding: 72px 24px;
+    padding: 72px 24px 0 24px;
 }
 
 .modal-close{
@@ -687,6 +687,7 @@ img{
 
 .modal-wrap{
     position: relative;
+    margin-bottom: 8px;
 }
 
 .modal-button{ 
